@@ -63,9 +63,11 @@ dependencies {
     debugImplementation(libs.androidx.compose.ui.tooling)
     debugImplementation(libs.androidx.compose.ui.test.manifest)
     implementation("androidx.navigation:navigation-compose:2.8.0")
-    implementation(platform("com.google.firebase:firebase-bom:33.1.0")) // الـ BOM بيظبط الإصدارات
+    implementation(platform("com.google.firebase:firebase-bom:33.1.0"))
     implementation("com.google.firebase:firebase-auth")
-// مكتبة قاعدة البيانات
-    implementation("com.google.firebase:firebase-firestore")
 
+    implementation("com.google.firebase:firebase-firestore")
+    testImplementation("junit:junit:4.13.2")
+    testImplementation("org.mockito.kotlin:mockito-kotlin:5.1.0")
+    testImplementation("com.google.truth:truth:1.1.3")
 }
